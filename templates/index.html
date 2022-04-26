@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Muhammad Dwiki Yudhistira - Weight Prediction</title>
+	<link rel="stylesheet" type="text/css" href="../static/style.css">
+	<link href="https://fonts.googleapis.com/css?family=Quicksand&display=swap" rel="stylesheet">
+	<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0">
+</head>
+<body>
+	<div class="container">
+		<div class="contact-box">
+			<div class="left"></div>
+			<div class="right">
+				<h2>Prediksi Berat Badan</h2><br>
+				<form method="POST" action="">
+				<select name="jk" class="field">
+					<option>Jenis Kelamin</option>
+					<option value="0">Perempuan</option>
+					<option value="1">Laki-laki</option>
+				</select>
+				<input type="text" name="height" class="field" placeholder="Tinggi Badan">
+				<button class="btn">Prediksi</button>
+				</form>
+				<br><br><br>
+				{% if result is defined %}
+                <h2>Hasil prediksi nya adalah : {{result}} Kg</h2>
+
+				<p>created by : Muhammad Dwiki Yudhistira (Alfatih)</p>
+            </div>
+            {% endif %}
+			</div>
+		</div>
+	</div>
+</body>
+</html>
